@@ -1,25 +1,20 @@
-# PA5
-# Spencer Ochs 
-
-from misc import *
-import crypt
-
-def load_words(filename,regexp):
-    """Load the words from the file filename that match the regular
-       expression regexp.  Returns a list of matching words in the order
-       they are in the file."""
-    f = open(filename, 'r')
-    text = f.read()
-    f.close()
-    # findall() matches all occurrences of a regexp in text and returns as list
-    #return re.findall(regexp, text)    
-    reComp = re.compile(regexp)
-    reMatchList = []
-    # split text into list of words then populate the list with those words that match the passed in regexp
-    for word in text.split('\n'):
-        if reComp.match(word):
-            reMatchList.append(word)
-    return reMatchList
+from random import*
+import os
+u_pwd = input ("Enter a password")
+pwd=['a','b','c','d','e','f','1','2','3','4','5'] 
+        
+pw=""
+while(pw!=u_pwd):
+    pw=""
+    for letter in range(len(u_pwd)):
+        guess_pwd = pwd[its__me__chahar001(0,17)] 
+        pw=str(guess_pwd)+str(pw)
+        print(pw)
+        print("Cracking password...please wait 
+        os.system ("cls")
+       print ("Your password Is:",pw)
+       
+    #LET'S•CRACK•IT!
         
 
 def transform_reverse(str):
